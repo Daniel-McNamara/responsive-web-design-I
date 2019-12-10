@@ -212,6 +212,9 @@ nav a:hover {
 	transition: color 0.6s;
 }
 
+.navimage{
+	margin-top: 3%;
+}
 span {
 	font-weight: bold;
 }
@@ -224,5 +227,101 @@ title {
 	width: 100%;
 }
 
-/*new code for responsive design 1 */
+/*new code for responsive design 1 media quiries */
 
+@media (max-width: 800px){
+	body{
+		/*justify-content: space-around;*/
+		width:80%;
+		margin:0% auto;
+	}
+
+	#iod-right{
+	display:none;
+	}
+	
+	nav a{
+		margin:2.4%;
+	}
+
+	#iod-left{
+		justify-content: center;
+		margin-left: 25%;
+	}
+	
+	#feature-about{
+		margin: 0 auto;
+		/*margin-left: 2%;
+		margin-right: 50%;*/
+	}
+
+	#service-product-vision{
+		margin-left: 2%;
+	}
+
+	#contact{
+		margin-left: 2%;
+	}
+
+}
+
+@media (max-width: 500px){
+	nav a{
+		display:flex;
+		flex-direction: column;
+		border-bottom: solid grey 1px;
+	}
+
+	nav{
+		background:none;
+	}
+
+	#navimage{
+		margin:0 auto;
+	}
+	
+	#iod-left{
+		margin-top: 80%;
+	}
+
+	#feature-about{
+		display:flex;
+		flex-direction: column;
+		margin: 3% auto;
+	}
+
+	#fa-left{
+		margin: 3%;
+	}
+
+	#fa-right{
+		margin: 3%;
+	}
+
+	#service-product-vision{
+		display:flex;
+		flex-direction: column;
+		margin: 3% auto;
+	}
+
+	#spv-left{
+		justify-content: space-evenly;
+		margin: 3%;
+	}
+
+	#spv-middle{
+		justify-content: space-evenly;
+		margin: 3%;
+	}
+	
+	#spv-right{
+		justify-content: space-evenly;
+		margin: 3%;
+		
+	}
+
+	.middle-img{
+		justify-content: space-evenly;
+		margin: 3%;
+	}
+}
